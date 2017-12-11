@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.nazanin.casalomahospitalapp.PatientTest">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/register" />
+
+    <TextView
+        android:id="@+id/patientTestFornTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/list_of_tests"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/testIdEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/patientTestFornTextView"
+            android:layout_alignStart="@+id/patientTestFornTextView"
+            android:layout_below="@+id/patientTestFornTextView"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/test_id"
+            android:textColor="?attr/colorControlNormal"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <EditText
+            android:id="@+id/temperatureEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Temprature"
+            android:textColor="?attr/colorControlNormal"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="105dp"
+            android:layout_below="@+id/testIdEditText"
+            android:layout_alignLeft="@+id/testIdEditText"
+            android:layout_alignStart="@+id/testIdEditText" />
+
+        <EditText
+            android:id="@+id/heartbeetEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/heart_beat"
+            android:textColor="?attr/colorControlNormal"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="148dp"
+            android:layout_below="@+id/temperatureEditText"
+            android:layout_alignLeft="@+id/temperatureEditText"
+            android:layout_alignStart="@+id/temperatureEditText" />
+
+        <EditText
+            android:id="@+id/bloodpressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/blood_pressure"
+            android:textColor="?attr/colorControlNormal"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="191dp"
+            android:layout_below="@+id/heartbeetEditText"
+            android:layout_alignLeft="@+id/heartbeetEditText"
+            android:layout_alignStart="@+id/heartbeetEditText" />
+
+        <EditText
+            android:id="@+id/bplEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/bpl"
+            android:textColor="?attr/colorControlNormal"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="234dp"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/bloodpressure"
+            android:layout_alignStart="@+id/bloodpressure" />
+
+    <EditText
+        android:id="@+id/bphEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/mriEditText"
+        android:layout_alignStart="@+id/mriEditText"
+        android:layout_below="@+id/mriEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/bph"
+        android:textColor="?attr/colorControlNormal"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="277dp" />
+
+        <EditText
+            android:id="@+id/mriEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/mri"
+            android:textColor="?attr/colorControlNormal"
+            tools:layout_editor_absoluteX="30dp"
+            android:layout_below="@+id/bplEditText"
+            android:layout_alignLeft="@+id/bplEditText"
+            android:layout_alignStart="@+id/bplEditText" />
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="377dp"
+            android:onClick="onPatientTestFormActivityClick"
+            android:layout_below="@+id/bphEditText"
+            android:layout_alignRight="@+id/patientTestFornTextView"
+            android:layout_alignEnd="@+id/patientTestFornTextView"
+            android:layout_marginTop="34dp" />
+
+</RelativeLayout>

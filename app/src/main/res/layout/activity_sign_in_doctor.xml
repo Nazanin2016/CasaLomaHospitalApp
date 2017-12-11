@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.nazanin.casalomahospitalapp.signInDoctor">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sign_in_doctor" />
+
+    <EditText
+        android:id="@+id/doctorUsernameTextEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorAccent"
+        android:layout_marginTop="122dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="34dp"
+        android:layout_marginEnd="34dp" />
+
+    <EditText
+        android:id="@+id/doctorPasswordTextEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/doctorUsernameTextEdit"
+        android:layout_alignStart="@+id/doctorUsernameTextEdit"
+        android:layout_below="@+id/doctorUsernameTextEdit"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/doctorBtnLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:onClick="onDoctorSignInActivityClick"
+        android:text="LOG IN"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignBottom="@+id/doctorBtnRegester"
+        android:layout_alignLeft="@+id/doctorBtnRegester"
+        android:layout_alignStart="@+id/doctorBtnRegester" />
+
+    <Button
+        android:id="@+id/doctorBtnRegester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/doctorPasswordTextEdit"
+        android:layout_alignRight="@+id/doctorPasswordTextEdit"
+        android:layout_below="@+id/doctorPasswordTextEdit"
+        android:layout_marginTop="105dp"
+        android:text="Register"
+        android:onClick="onRegisterButtonClick"
+        android:textColor="@color/colorPrimary" />
+
+</RelativeLayout>
+
+

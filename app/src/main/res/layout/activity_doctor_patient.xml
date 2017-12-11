@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.nazanin.casalomahospitalapp.DoctorPatient">
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/patient" />
+
+        <TextView
+            android:id="@+id/doctorWelcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="cursive"
+            android:textColor="#0f0f0f"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="60dp"
+            tools:targetApi="jelly_bean" />
+
+        <EditText
+            android:id="@+id/doctorPatientFirstnameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctorPatientTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/firstname"
+            android:textColor="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/doctorPatientLastnameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/doctorPatientFirstnameEditText"
+            android:layout_alignStart="@+id/doctorPatientFirstnameEditText"
+            android:layout_below="@+id/doctorPatientFirstnameEditText"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/lastname"
+            android:textColor="@color/colorPrimary" />
+
+        <Button
+            android:id="@+id/doctorPatientSearchBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search1"
+            android:textColor="@color/colorPrimary"
+            tools:ignore="UnknownIdInLayout"
+            android:onClick="onDoctorPatientActivityClick"
+            android:layout_below="@+id/doctorPatientLastnameEditText"
+            android:layout_alignLeft="@+id/doctorPatientLastnameEditText"
+            android:layout_alignStart="@+id/doctorPatientLastnameEditText"
+            android:layout_marginTop="35dp" />
+
+        <Button
+            android:id="@+id/doctorPatientAddBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:onClick="onAddButtonClick"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignBaseline="@+id/doctorPatientSearchBtn"
+            android:layout_alignBottom="@+id/doctorPatientSearchBtn"
+            android:layout_toRightOf="@+id/doctorPatientSearchBtn"
+            android:layout_toEndOf="@+id/doctorPatientSearchBtn"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp" />
+
+        <TextView
+            android:id="@+id/doctorPatientTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doctorWelcomeTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:fontFamily="serif"
+            android:text="Patient"
+            android:textColor="#0f0f0f"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="UnusedAttribute" />
+    </RelativeLayout>
+
+

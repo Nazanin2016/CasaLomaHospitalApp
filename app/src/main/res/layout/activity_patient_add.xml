@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.nazanin.casalomahospitalapp.PatientAdd">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/patient" />
+
+    <TextView
+        android:id="@+id/patientAddTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patientDepartmentEditText"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/patientDepartmentEditText"
+        android:layout_marginTop="38dp"
+        android:text="@string/patient_registeration"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <EditText
+        android:id="@+id/patientFirstnameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patientBtnAddIt"
+        android:layout_alignStart="@+id/patientBtnAddIt"
+        android:layout_below="@+id/patientAddTextView"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/first_name2"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <EditText
+        android:id="@+id/patientLastnameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/patientFirstnameEditText"
+        android:layout_alignRight="@+id/patientFirstnameEditText"
+        android:layout_below="@+id/patientFirstnameEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/last_name2"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <EditText
+        android:id="@+id/patientIdEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patientdoctoridEditText"
+        android:layout_alignStart="@+id/patientdoctoridEditText"
+        android:layout_below="@+id/patientdoctoridEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/patient_id"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="171dp" />
+
+    <EditText
+        android:id="@+id/patientdoctoridEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patientRoomEditText"
+        android:layout_alignStart="@+id/patientRoomEditText"
+        android:layout_below="@+id/patientRoomEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Doctor Id"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="214dp" />
+
+    <EditText
+        android:id="@+id/patientRoomEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patientDepartmentEditText"
+        android:layout_alignStart="@+id/patientDepartmentEditText"
+        android:layout_below="@+id/patientDepartmentEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/room_number"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <EditText
+        android:id="@+id/patientDepartmentEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/patientLastnameEditText"
+        android:layout_alignStart="@+id/patientLastnameEditText"
+        android:layout_below="@+id/patientLastnameEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/department1"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <Button
+        android:id="@+id/patientBtnAddIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/patientIdEditText"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="43dp"
+        android:onClick="onPatientAddActivityClick"
+        android:text="@string/enter2"
+        android:textColor="@color/colorPrimaryDark"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+
+    </RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.nazanin.casalomahospitalapp.signInNurse">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/sin_in_nurse" />
+
+    <EditText
+        android:id="@+id/nurseUsernameTextEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:textColor="@color/colorPrimary"
+        android:textColorLink="@color/colorAccent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <EditText
+        android:id="@+id/nursePasswordTextEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nurseUsernameTextEdit"
+        android:layout_alignStart="@+id/nurseUsernameTextEdit"
+        android:layout_below="@+id/nurseUsernameTextEdit"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Password"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/nurseBtnLogIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNurseSignInActivityClick"
+        android:text="LOG IN"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="72dp"
+        android:layout_below="@+id/nursePasswordTextEdit"
+        android:layout_alignLeft="@+id/nurseBtnRegester"
+        android:layout_alignStart="@+id/nurseBtnRegester" />
+
+    <Button
+        android:id="@+id/nurseBtnRegester"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/nursePasswordTextEdit"
+        android:layout_alignRight="@+id/nursePasswordTextEdit"
+        android:layout_below="@+id/nurseBtnLogIn"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginTop="26dp"
+        android:onClick="onRegisterButtonClick"
+        android:text="Register"
+        android:textColor="@color/colorPrimary"
+        tools:text="REGISTER" />
+
+</RelativeLayout>

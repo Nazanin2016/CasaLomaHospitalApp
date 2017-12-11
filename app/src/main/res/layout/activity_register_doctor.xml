@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.nazanin.casalomahospitalapp.RegisterDoctor">
+
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/register"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/doctorFirstnameTextEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/first_name4"
+        android:textColor="?android:attr/textColorHint"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="73dp"
+        android:layout_above="@+id/doctorLastnameTextEdit"
+        android:layout_alignLeft="@+id/doctorLastnameTextEdit"
+        android:layout_alignStart="@+id/doctorLastnameTextEdit" />
+
+    <EditText
+        android:id="@+id/doctorLastnameTextEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/last_name4"
+        android:textColor="?android:attr/textColorHint"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="116dp"
+        android:layout_above="@+id/doctorIdTextEdit"
+        android:layout_alignRight="@+id/doctorBtnLoginRegister"
+        android:layout_alignEnd="@+id/doctorBtnLoginRegister" />
+
+    <EditText
+        android:id="@+id/doctorIdTextEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/doctorDepartmentTextEdit"
+        android:layout_alignLeft="@+id/doctorLastnameTextEdit"
+        android:layout_alignStart="@+id/doctorLastnameTextEdit"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Doctor ID"
+        android:textColor="?android:attr/textColorHint"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <EditText
+        android:id="@+id/doctorDepartmentTextEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/doctorIdTextEdit"
+        android:layout_alignStart="@+id/doctorIdTextEdit"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/department4"
+        android:textColor="?android:attr/textColorHint"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="210dp" />
+
+    <EditText
+        android:id="@+id/doctorUsernameTextEditRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/doctorDepartmentTextEdit"
+        android:layout_alignStart="@+id/doctorDepartmentTextEdit"
+        android:layout_below="@+id/doctorDepartmentTextEdit"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/username4"
+        android:textColor="?android:attr/textColorHint"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <EditText
+        android:id="@+id/doctorPasswordTextEditRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/doctorUsernameTextEditRegister"
+        android:layout_alignStart="@+id/doctorUsernameTextEditRegister"
+        android:layout_below="@+id/doctorUsernameTextEditRegister"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/password4"
+        android:textColor="?android:attr/textColorHint"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <Button
+        android:id="@+id/doctorBtnLoginRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDoctorRegisterActivityClick"
+        android:text="@string/enter4"
+        android:textColor="@color/colorPrimary"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="399dp"
+        android:layout_alignBottom="@+id/imageView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="22dp" />
+
+        <TextView
+            android:id="@+id/doctorRegisterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registration"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="31dp"
+            android:layout_marginTop="34dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/doctorBtnLoginRegister"
+            android:layout_alignEnd="@+id/doctorBtnLoginRegister"
+            android:layout_marginRight="46dp"
+            android:layout_marginEnd="46dp" />
+
+    <EditText
+        android:id="@+id/doctorConfPasswordTextEditRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/doctorPasswordTextEditRegister"
+        android:layout_alignStart="@+id/doctorPasswordTextEditRegister"
+        android:layout_below="@+id/doctorPasswordTextEditRegister"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/confirm_password4"
+        android:textColor="?android:attr/textColorHint" />
+    </RelativeLayout>

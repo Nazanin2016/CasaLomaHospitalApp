@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.nazanin.casalomahospitalapp.NursePatient">
+
+
+
+        <ImageView
+            android:id="@+id/nursePatientImgView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/patient"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/nurseWelcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="36dp"
+            android:fontFamily="cursive"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+    <EditText
+        android:id="@+id/nursePatientFirstnameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nursePatientTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/first_name1"
+        android:textColor="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/nursePatientLastnameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/nursePatientFirstnameEditText"
+        android:layout_alignStart="@+id/nursePatientFirstnameEditText"
+        android:layout_below="@+id/nursePatientFirstnameEditText"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/last_name1"
+        android:textColor="@color/colorPrimary" />
+
+
+    <Button
+            android:id="@+id/nursePatientAddBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/nursePatientLastnameEditText"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/nursePatientLastnameEditText"
+            android:layout_marginBottom="67dp"
+            android:text="@string/add"
+            android:onClick="onAddButtonClick"
+            android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/nursePatientTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nurseWelcomeTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp"
+        android:fontFamily="serif"
+        android:text="@string/patient"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/nursePatientSearchBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        tools:ignore="UnknownIdInLayout"
+        android:onClick="onNursePatientActivityClick"
+        android:layout_alignBottom="@+id/nursePatientAddBtn"
+        android:layout_alignLeft="@+id/nursePatientLastnameEditText"
+        android:layout_alignStart="@+id/nursePatientLastnameEditText"
+        android:text="@string/search2" />
+</RelativeLayout>
+
